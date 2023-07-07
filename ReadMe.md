@@ -10,12 +10,12 @@ Approximate time required to replicate the project: **2-3 hours**
 
 ## Objective
 
-Security is the main need for humanity since we exist. We build castles, homes, and fences to be more secure. The advancements in technology and our civilization brought new dangers that we face in daily life. For example gas leak. If we look back five hundred years ago humanity didn't have such a danger. The high buildings that we build now should be more secure against earthquakes. The main objective for me to pick this project is; to improve security with technology, against incidents that we cannot control. For example natural disasters like earthquakes or gas leaks. In today's world, we can minimize the deaths caused by this kind of incident. The sensors and the internet that we use can detect danger and inform people with notifications or information that is provided via security system and help us to satisfy our need to feel safe.
+Security is the main need for humanity since we exist. We build castles, homes, and fences to be more secure. The advancements in technology and our civilization brought new dangers that we face in daily life. For example gas leak. If we look back five hundred years ago humanity didn't have such a danger. The high buildings that we build now should be more secure against earthquakes. The main objective for me to pick this project is; to improve security with technology, against incidents that we cannot control. For example natural disasters like earthquakes or gas leaks. In today's world, we can minimize the deaths caused by this kind of incident. The sensors and the internet that we use can detect danger and inform people with notifications or information that is provided via security systems and help us to satisfy our need to feel safe.
 
 
 Circuit 1 of the MQTT Smart security system has an ultrasonic distance sensor. These sensors can be found in automobile self-parking technology or in robotics. It measures the distance by using ultrasonic waves. This sensor is used to detect people or animals who enter the room. The system is installed on the doors. It uses MQTT to send notifications to your phone. It also sets the alarm and starts to light a red LED. The alarm can be controlled via phone.
 
-Circuit 2 is more complex than the first circuit. Circuit 2 consists of four different sensors. There are also three LEDs. All four sensors use MQTT to send notifications to your phone. 
+Circuit 2 is more complex than the first circuit. Circuit 2 consists of four different sensors. There are also three LEDs. All four sensors use MQTT to send notifications to your phone.
 
 **Flame Sensor**  
 The flame sensor measures the intensity or heat to detect the fire. When the sensor detects the fire, it sends a notification to the phone. When the fire is under control you can reset the sensor via phone.
@@ -23,10 +23,18 @@ The flame sensor measures the intensity or heat to detect the fire. When the sen
 **Vibration Sensor**  
 Natural disasters are the things that we cannot control. When an earthquake happens during your sleep you might not be able to act in time to find a safe place. The vibration sensor will inform you via notifications to your phone. In that way, the danger can be minimized.
 **The Gas Sensor**  
-Gas leaks are one of the reasons for deads in our age. Every year lots of people die because of gas leaks. The gas leak sensor will detect the leak and inform the user so the user can avoid the danger.
+Gas leaks are one of the reasons for deads in our age. Every year lots of people die because of gas leaks. The gas leak sensor will detect the leak and inform the user so the user can avoid danger.
 
 **Temperature/Humidity Sensor**  
 The temperature and humidity sensor is an additional feature that we added to this system. You can see detailed data about temperature and humidity in the environment. In that way, users will have more control over the environment.
+
+
+Cost-effectiveness: The MQTT Smart security system is also cost-effective. This system is easy to build and the sensors that are used in the system are highly accessible so production of the system will be cheap and easy. Due to its cost-effectiveness, it can provide security for a wide range of users.
+
+Easy installation and use: The other important thing with the system is, it is easy to install and use. The system only should be installed in an environment that is aimed at security. The ultrasonic wave sensor should be attached to the door and other sensors can be installed at any place in the room. Then users can get notifications through the MQTT dashboard app.
+
+Remote monitoring and control: The system will provide remote control to the user via the internet. The user will be able to monitor and control the sensors through the mobile application.
+
 
 ## List of material
 |Component |Function |Price and link |
@@ -168,7 +176,7 @@ The image shows the UI of the MQTT Dashboard application. The alarm button commu
   
 
 ### Database
-The database is not accessible through MQTT mobile app. It can be accessed by Adafruit.com account.
+The database is not accessible through the MQTT mobile app. It can be accessed through an Adafruit.com account. Data is saved in the database every three seconds for the temperature and humidity sensor and for the other four sensors data is saved when there is communication between the user and sensors. For example, if the fire alarm is triggered the database will save the alarm, and if the user responds the data also will be saved.
 
 ![image](/img/database_fire.png)
 The image shows the database of the Fire Detector. The communication is can be seen in the image. The 1 refers to a fire alarm and the 0 means that the alarm is taken under control.
